@@ -1,0 +1,41 @@
+{
+  "name": "vite-plugin-assetpack",
+  "version": "0.0.1",
+  "type": "module",
+  "author": "h1ve2",
+  "license": "MIT",
+  "description": "Using assetpack in Vite",
+  "keywords": [
+    "vite",
+    "assetpack",
+    "pixi"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/h1ve2/vite-plugin-assetpack.git"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "npm run clean && tsc",
+    "clean": "rimraf ./dist",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "./dist/"
+  ],
+  "dependencies": {
+    "@assetpack/core": "^1.4.0",
+    "vite": "^6.2.1"
+  },
+  "devDependencies": {
+    "rimraf": "^6.0.1"
+  }
+}
