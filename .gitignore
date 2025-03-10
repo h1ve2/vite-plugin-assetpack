@@ -2,4 +2,4 @@
 /node_modules/
 /.idea/
 /.vscode/
-.vite-plugin-assetpack-*.tgz
+vite-plugin-assetpack-*.tgz
